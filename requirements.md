@@ -21,6 +21,8 @@ Schemas directory:
 index.js: Export your typeDefs and resolvers.
 
 resolvers.js: Define the query and mutation functionality to work with the Mongoose models.
+
+DONE
 ---
 
 typeDefs.js: Define the necessary Query and Mutation types:
@@ -30,6 +32,8 @@ Query type:
 
      me: Which returns a User type.
 
+
+DONE
 ---
 
 Mutation type:
@@ -41,6 +45,9 @@ Mutation type:
      saveBook: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a User type. (Look into creating what's known as an input type to handle all of these parameters!)
 
      removeBook: Accepts a book's bookId as a parameter; returns a User type.
+
+
+DONE
 
 ---
 
@@ -56,6 +63,8 @@ User type:
 
      savedBooks (This will be an array of the Book type.)
 
+
+DONE
 ---
 Book type:
 
@@ -70,6 +79,8 @@ Book type:
      image
 
      link
+
+DONE
 ---
 
 Auth type:
@@ -77,6 +88,9 @@ Auth type:
      token
 
      user (References the User type.)
+
+
+DONE
 ---
 
 **FRONT END**
@@ -84,6 +98,8 @@ Auth type:
 
 queries.js: This will hold the query GET_ME, which will execute the me query set up using Apollo Server.
 
+
+DONE
 ---
 
 mutations.js:
@@ -95,9 +111,13 @@ mutations.js:
      SAVE_BOOK will execute the saveBook mutation.
 
      REMOVE_BOOK will execute the removeBook mutation.
+
+CHECK TO MAKE SURE REMOVE BOOK IS RETURNING PROPER INFO
 ---
 
 App.js: Create an Apollo Provider to make every request work with the Apollo server.
+
+DONE
 ---
 
 SearchBooks.js:
@@ -105,6 +125,8 @@ SearchBooks.js:
      Use the Apollo useMutation() Hook to execute the SAVE_BOOK mutation in the handleSaveBook() function instead of the saveBook() function imported from the API file.
 
      Make sure you keep the logic for saving the book's ID to state in the try...catch block!
+
+DONE?
 ---
 
 SavedBooks.js:
