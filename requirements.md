@@ -7,9 +7,13 @@ shawn123
 **BACK END**
 ---
 server.js: Implement the Apollo Server and apply it to the Express server as middleware.
+
+DONE
 ---
 
 auth.js: Update the auth middleware function to work with the GraphQL API.
+
+DONE
 ---
 
 Schemas directory:
